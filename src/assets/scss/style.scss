@@ -45,9 +45,6 @@
 @import "utilities";
 @import "print";
 
-$mainColor: #187bcd;
-$secondColor: orange;
-
 html {
   scroll-behavior: smooth;
 }
@@ -66,7 +63,7 @@ header {
         font-weight: 600;
 
         &:hover {
-          color: blue;
+          color: #961432;
           text-decoration: none;
         }
       }
@@ -138,7 +135,7 @@ section {
 footer {
   border-top: 1px solid $gray-200;
   padding-top: 30px;
-  background-color: $mainColor;
+  background-color: $maincolor;
   color: white;
 }
 
