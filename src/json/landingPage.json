@@ -1,0 +1,20 @@
+{
+    "saya": {
+        "name": "Ridho Hayatullah",
+        "passion": "Gaming, Design, and Coding"
+    },
+
+    "project": [
+        {
+            "_id": "Beachcation",
+        "name": "Beachcation",
+        "details": "Project membuat website traveling menggunakan Javascript dan React",
+        "imageUrl": "images/project1.jpg"
+    }, {
+        "_id": "Cinema",
+        "name":"Trailer Film dan Pemesanan Ticket Bioskop Berbasis Augmented Reality",
+        "details":"Project membuat aplikasi pemesanan ticket bioskop berbasis augmented reality menggunakan unity engine",
+        "imageUrl": "/images/project2.jpg"
+    }
+        ]
+    }

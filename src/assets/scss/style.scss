@@ -1,0 +1,213 @@
+/*!
+ * Bootstrap v4.6.0 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+@import "colorVariables";
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "container-grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "utilities";
+@import "print";
+
+$mainColor: #187bcd;
+$secondColor: orange;
+
+html {
+  scroll-behavior: smooth;
+}
+header {
+  border-bottom: 1px solid $gray-200;
+  background-color: #187bcd;
+
+  .navbar {
+    height: 80px;
+
+    ul.navbar-nav {
+      a {
+        color: white;
+        margin-left: 2rem;
+        margin-right: 3rem;
+        font-weight: 600;
+
+        &:hover {
+          color: blue;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.jumbotron {
+  background-color: #e2edff;
+}
+
+.jumbotron-about {
+  background-color: #fff;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+.navbar-logo {
+  height: auto;
+  width: auto;
+  max-height: 80px;
+  max-width: 250px;
+}
+
+.img-cover {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.img-contain {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+.card {
+  &.bordered {
+    border: 1px solid $gray-200;
+  }
+  .img-wrapper {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0px;
+    border-radius: 0.9375rem;
+    overflow: hidden;
+  }
+  &.card-featured {
+    overflow: hidden;
+    cursor: pointer;
+    height: 100%;
+  }
+
+  .meta-wrapper {
+    margin-top: 8px;
+    h4 {
+      font-size: 1.125rem;
+      margin-bottom: 2px;
+    }
+
+    span {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+/* ------------------ FOOTER ---------------------*/
+footer {
+  border-top: 1px solid $gray-200;
+  padding-top: 30px;
+  background-color: $mainColor;
+  color: white;
+}
+
+input {
+  &.form-control {
+    font-size: 18px;
+    box-shadow: #187bcd;
+  }
+}
+
+.label-contact {
+  justify-content: center;
+  padding: 30px 250px;
+  position: relative;
+  span {
+    font-size: 2rem;
+    font-weight: 700;
+    &.please-fill {
+      color: white;
+      font-size: 20px;
+      overflow: hidden;
+    }
+  }
+}
+
+.container-contact {
+  padding: 0 150px;
+  position: relative;
+  width: 80%;
+}
+
+.container-email {
+  justify-content: center;
+  padding: 50px 150px;
+  margin-top: 60%;
+  a {
+    font-size: 2rem;
+    border: 6px solid white;
+    color: white;
+  }
+}
+
+h2 {
+  span {
+    color: #187bcd;
+  }
+}
+
+#Contact {
+  .futer-img {
+    width: 100%;
+    img {
+      width: 100%;
+      height: 50%;
+      margin-top: 80px;
+      margin-left: 80px;
+    }
+  }
+
+  .tombol {
+    background-color: rgb(9, 59, 134);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+}
