@@ -1,56 +1,44 @@
-        <div className="col-auto" style={{ width: 300, height: 300 }}>
-          <img
-            className="rounded img-fluid text-center"
-            src={Banner}
-            alt="Banner"
-          />
-        </div>
-        
-        style={{ paddingLeft: 1, paddingRight: 1 }}
-
-
-
-                  <div className="container-grid">
-            {props.data.map((item, index) => {
-              return (
-                <div
-                  key={`project-${index}`}
-                  className={`item ${index > 0 ? "column-6" : "column-6"} ${
-                    index > 0 ? "row-1" : "row-1"
-                  }`}
-                >
-                  <div className="card card-featured h-100">
-                    <figure className="img-wrapper">
-                      <img
-                        src={item.imageUrl}
-                        alt="Project Name"
-                        className="img-contain"
-                      />
-                    </figure>
-                    <span className="font-weight-300 text-gray-900 mt-4">
-                      {item.details}
-                    </span>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
-
-                      <div className="card">
-              <div className="row">
-                <img src={Project1} alt="Project 1" className="img-cover" />
-              </div>
-              <div className="row">
-                <img src={Project2} alt="Project 2" className="img-cover" />
-              </div>
-            </div>
-
-
   const getNavLinkClass = (path) => {
     return props.location.pathname === path ? "active" : "";
   };
 
-   ${getNavLinkClass("/AboutMe")
-    ${getNavLinkClass("/Project")
-    ${getNavLinkClass("/")
+              <Fade delay={2000}>
+              <div className="collapse navbar-collapse">
+                <ul className="navbar-nav ml-auto">
+                  <li className={`nav-item ${getNavLinkClass("/")}`}>
+                    <a href="#AboutMe">About me</a>
+                    <a href="#Project">Project</a>
+                    <a href="#Contact">Contact Me</a>
+                  </li>
+                </ul>
+              </div>
+            </Fade>
+
+
+              .navbar {
+    height: 80px;
+  .navbar {
+    height: 80px;
+
+    ul.navbar-nav {
+      a {
+        color: white;
+        margin-left: 2rem;
+        margin-right: 3rem;
+        font-weight: 600;
+
+        &:hover {
+          color: #961432;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.navbar-logo {
+  height: auto;
+  width: auto;
+  max-height: 80px;
+  max-width: 250px;
+}

@@ -15,12 +15,10 @@ export default class LandingPage extends Component {
   render() {
     return (
       <>
-        <Header {...this.props} refAboutMe={this.refAboutMe}></Header>
-        <div className="GeserSmooth">
-          <Hero data={landingPage.saya} />
-          <AboutMe refAboutMe={this.refAboutMe} />
-          <Project data={landingPage.project} />
-        </div>
+        <Header {...this.props}></Header>
+        <Hero data={landingPage.saya} />
+        <AboutMe />
+        <Project data={landingPage.project} />
         <Footer />
       </>
     );

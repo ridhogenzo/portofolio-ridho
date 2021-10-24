@@ -2,8 +2,10 @@ import React from "react";
 import Banner from "assets/images/Ridhogenzo.png";
 import { Jumbotron } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
+import Tada from "react-reveal/Tada";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
+import Button from "elements/Button";
 
 export default function Hero(props) {
   const textRef = useRef();
@@ -35,9 +37,13 @@ export default function Hero(props) {
               </Fade>
             </div>
             <div className="col-6 text-center" style={{ paddingTop: 50 }}>
-              <h1 className="line-height-1 mb-3 text-gray-900 font-weight-bold">
-                Ridho Hayatullah
-              </h1>
+              <Fade Bottom delay={4500}>
+                <Tada delay={4800}>
+                  <h1 className="line-height-1 mb-3 text-gray-900 font-weight-bold">
+                    Ridho Hayatullah
+                  </h1>
+                </Tada>
+              </Fade>
               <h2>
                 Saya sangat berantusias ingin menjadi{" "}
                 <span ref={textRef}></span>

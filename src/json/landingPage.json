@@ -9,7 +9,7 @@
             "_id": "Beachcation",
         "name": "Beachcation",
         "details": "Project membuat website traveling menggunakan Javascript dan React",
-        "imageUrl": "images/project1.jpg"
+        "imageUrl": "images/beachcation.jpg"
     }, {
         "_id": "Cinema",
         "name":"Trailer Film dan Pemesanan Ticket Bioskop Berbasis Augmented Reality",

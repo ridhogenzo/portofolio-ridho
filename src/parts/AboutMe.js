@@ -1,28 +1,38 @@
 import React from "react";
 import { Jumbotron } from "react-bootstrap";
+import Fade from "react-reveal/Fade";
 
 export default function AboutMe(props) {
   return (
     <Jumbotron
       className="jumbotron-about"
+      id="AboutMe"
       style={{ paddingLeft: 1, paddingRight: 1 }}
     >
-      <section className="container" ref={props.refAboutMe} id="AboutMe">
-        <div className="row">
-          <div className="col">
-            <h1 className="font-weight-bold text-gray-900 text-center mb-3">
-              About Me
-            </h1>
-            <div className="row">
-              <div className="h4 text-center">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
-                tempore, veniam harum nostrum dolores dolore? Debitis beatae eos
-                culpa voluptas!
+      <Fade top cascade delay={5500}>
+        <section className="container">
+          <div className="row">
+            <div className="col">
+              <h1 className="font-weight-bold text-gray-900 text-center mb-3">
+                About Me
+              </h1>
+              <div className="row">
+                <div className="h4 text-center">
+                  <p>
+                    My name is Ridho Hayatullah, I'm 22 years old and I live in
+                    Jakarta. And my domicile is Jatinegara.
+                  </p>
+                  <p>
+                    I'm looking for new opporunity in Front-End Developer. My
+                    experience is based on technologies like Javascript, HTML5,
+                    CSS3, and C#.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </Fade>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#e2edff"

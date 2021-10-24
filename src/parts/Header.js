@@ -18,15 +18,9 @@ export default function Header(props) {
               <div className="collapse navbar-collapse">
                 <ul className="navbar-nav ml-auto">
                   <li className={`nav-item ${getNavLinkClass("/")}`}>
-                    <a href="#AboutMe" className="semut">
-                      About me
-                    </a>
-                    <a href="#Project" className="semut">
-                      Project
-                    </a>
-                    <a href="#Contact" className="semut">
-                      Contact Me
-                    </a>
+                    <a href="#AboutMe">About me</a>
+                    <a href="#Project">Project</a>
+                    <a href="#Contact">Contact Me</a>
                   </li>
                 </ul>
               </div>

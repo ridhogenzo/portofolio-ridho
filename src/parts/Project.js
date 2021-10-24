@@ -1,14 +1,21 @@
-import React from "react";
+import { React, useState } from "react";
 import Button from "elements/Button";
+import Fade from "react-reveal/Fade";
 
 export default function Project(props) {
   return (
-    <section className="container mt-3" id="Project">
-      <div className="row text-center">
+    <section
+      className="container mt-3 project-content"
+      id="Project"
+      style={{ paddingBottom: 155, paddingTop: 50 }}
+    >
+      <div className="row">
         <div className="col">
-          <h1 className="font-weight-bold text-gray-900 text-center mb-3">
-            Project
-          </h1>
+          <Fade Top delay={1000}>
+            <h1 className="font-weight-bold text-gray-900 text-center mb-3">
+              Project
+            </h1>
+          </Fade>
           <div className="container-grid">
             {props.data.map((item, index) => {
               return (
@@ -18,32 +25,34 @@ export default function Project(props) {
                     index > 0 ? "row-1" : "row-1"
                   }`}
                 >
-                  <div className="card card-featured">
-                    <figure className="img-wrapper" style={{ height: 400 }}>
-                      <img
-                        src={item.imageUrl}
-                        alt={item.name}
-                        className="img-cover"
-                      />
-                    </figure>
-                    <div className="meta-wrapper">
-                      <Button
-                        type="link"
-                        href={`/properties/${item._id}`}
-                        className="streched-link d-block text-gray-800"
-                      >
-                        <h5
-                          className="h5 font-weight-bold"
-                          style={{ paddingTop: `1rem` }}
+                  <Fade delay={1500 * index}>
+                    <div className="card card-featured">
+                      <figure className="img-wrapper" style={{ height: 400 }}>
+                        <img
+                          src={item.imageUrl}
+                          alt={item.name}
+                          className="img-cover"
+                        />
+                      </figure>
+                      <div className="meta-wrapper">
+                        <Button
+                          type="link"
+                          href={`/${item._id}`}
+                          className="streched-link d-block text-gray-800"
                         >
-                          {item.name}
-                        </h5>
-                      </Button>
-                      <span className="text-gray-900 font-weight-light">
+                          <h5
+                            className="h4 font-weight-bold"
+                            style={{ paddingTop: `1rem` }}
+                          >
+                            {item.name}
+                          </h5>
+                        </Button>
+                      </div>
+                      <span className="text-gray-900 font-weight-light desc-proj">
                         {item.details}
                       </span>
                     </div>
-                  </div>
+                  </Fade>
                 </div>
               );
             })}

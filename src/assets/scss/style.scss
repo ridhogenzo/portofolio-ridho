@@ -48,6 +48,9 @@
 html {
   scroll-behavior: smooth;
 }
+
+/*----------------- NAVBAR + HEADER ----------------------- */
+
 header {
   border-bottom: 1px solid $gray-200;
   background-color: #187bcd;
@@ -71,6 +74,21 @@ header {
   }
 }
 
+.navbar-logo {
+  height: auto;
+  width: auto;
+  max-height: 80px;
+  max-width: 250px;
+}
+
+/*----------------- HERO --------------------- */
+
+h2 {
+  span {
+    color: #961432;
+  }
+}
+
 .jumbotron {
   background-color: #e2edff;
 }
@@ -83,12 +101,7 @@ section {
   margin-bottom: 50px;
 }
 
-.navbar-logo {
-  height: auto;
-  width: auto;
-  max-height: 80px;
-  max-width: 250px;
-}
+/* --------------- PROJECT --------------- */
 
 .img-cover {
   object-fit: cover;
@@ -111,7 +124,16 @@ section {
     margin-bottom: 0px;
     border-radius: 0.9375rem;
     overflow: hidden;
+    img {
+      transition: all 1s ease-in-out;
+      filter: grayscale(50%);
+      &:hover {
+        transform: scale(1.1);
+        filter: grayscale(0);
+      }
+    }
   }
+
   &.card-featured {
     overflow: hidden;
     cursor: pointer;
@@ -120,14 +142,18 @@ section {
 
   .meta-wrapper {
     margin-top: 8px;
-    h4 {
+    h5 {
       font-size: 1.125rem;
       margin-bottom: 2px;
+      text-align: center;
     }
-
-    span {
-      font-size: 1.25rem;
-    }
+  }
+}
+span {
+  &.desc-proj {
+    font-size: 1.125rem;
+    text-align: justify;
+    padding-top: 10px;
   }
 }
 
@@ -175,12 +201,6 @@ input {
     font-size: 2rem;
     border: 6px solid white;
     color: white;
-  }
-}
-
-h2 {
-  span {
-    color: #187bcd;
   }
 }
 
